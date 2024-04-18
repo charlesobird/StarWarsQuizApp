@@ -20,15 +20,15 @@ jobs:
         run: ./gradlew clean assembleRelease
       - name: List
         run: ls -alR ./app/build/outputs/apk/
-      - uses: dev-drprasad/delete-tag-and-release@v1.1
-        name: Delete latest alpha tag and release
-        with:
-          tag_name: latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.APK_BUILD_ACTION }}
-      - name: Sleep for 30 seconds, to allow the tag to be deleted
-        run: sleep 30s
-        shell: bash
+#      - uses: dev-drprasad/delete-tag-and-release@v1.1
+#        name: Delete latest alpha tag and release
+#        with:
+#          tag_name: latest
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.APK_BUILD_ACTION }}
+#      - name: Sleep for 30 seconds, to allow the tag to be deleted
+#        run: sleep 30s
+#        shell: bash
       - uses: ncipollo/release-action@v1.14.0
         name: Create new tag and release and upload artifacts
         with:
