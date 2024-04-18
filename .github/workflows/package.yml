@@ -20,8 +20,3 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build Release APK
         run: ./gradlew assembleRelease
-      - name: Releasing using Hub
-        uses: sangatdesai/release-apk@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.APK_BUILD_ACTION }}
-          APP_FOLDER: .
