@@ -20,8 +20,6 @@ jobs:
         run: ./gradlew clean assembleRelease
       - name: List
         run: ls -alR ./app/build/outputs/apk/
-      - name: Create hash
-        run: git rev-parse HEAD > app/build/outputs/apk/alpha/release/rev-hash.txt
       - name: Rename APK to universal
         run: mv app/build/outputs/apk/alpha/release/app-alpha-release-signed.apk app/build/outputs/apk/alpha/release/app-alpha-universal-release.apk
       - uses: dev-drprasad/delete-tag-and-release@v1.1
