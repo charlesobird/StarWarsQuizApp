@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-java@v3.13.0
         with:
           java-version: '17'
+          distribution: 'adopt'
 
       - name: Build with Gradle
         run: ./gradlew build
@@ -29,4 +30,3 @@ jobs:
         with:
           name: StarWarsQuizApp.apk
           path: app/build/outputs/apk/app-debug.apk
-          distribution: 'adopt'
