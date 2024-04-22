@@ -1,7 +1,7 @@
 package com.example.starwarsquizapp
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
 class CategorySelection : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
