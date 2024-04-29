@@ -1,4 +1,4 @@
-package com.example.starwarsquizapp
+package com.project.starwarsquizapp
 
 import org.junit.Test
 
