@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.project.starwarsquizapp.MainActivity">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textAlignment="center"
         android:fontFamily="@font/star_jedi"
+        android:textAlignment="center"
         android:textColor="@color/scheme_blue"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Star Wars Day" />
+        tools:text="Star Wars" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/description"
         android:layout_width="298dp"
         android:layout_height="499dp"
         android:textAlignment="center"
@@ -31,18 +31,19 @@
         app:layout_constraintBottom_toTopOf="@+id/btnCategorySelection"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         tools:text="This quiz is ...." />
 
     <Button
+        style="@android:style/Widget.Material.Button"
         android:id="@+id/btnCategorySelection"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="163dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/scheme_blue"
-        android:backgroundTintMode="src_in"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
         android:backgroundTint="@color/scheme_blue"
         android:onClick="openSelectionView"
         android:textAlignment="center"
@@ -51,8 +52,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
         tools:text="Select Category" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
