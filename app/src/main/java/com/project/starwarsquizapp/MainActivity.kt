@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun openSelectionView(view: View) {
-        startActivity(Intent(this, CategorySelection::class.java))
-    }
+//    fun openSelectionView(view: View) {
+//        startActivity(Intent(this, CategorySelection::class.java))
+//    }
 }
